@@ -1,4 +1,4 @@
-FROM giridharsalana/gitpod_container
+FROM gitpod/workspace-full
 
 LABEL maintainer="giridharsalana@gmail.com"
 
