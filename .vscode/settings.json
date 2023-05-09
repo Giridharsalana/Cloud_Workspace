@@ -1,4 +1,7 @@
 {
 	"makefile.extensionOutputFolder": "./.vscode",
-	"cmake.configureOnOpen": false
+	"cmake.configureOnOpen": false,
+	"rust-analyzer.linkedProjects": [
+		"/workspace/Cloud_Workspace/Code_Lab/Rust/rustlings/Cargo.toml"
+	]
 }
