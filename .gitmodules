@@ -1,3 +1,6 @@
 [submodule "Code_Lab/Dart/girimote"]
 	path = Code_Lab/Dart/girimote
 	url = git@github.com:Giridharsalana/girimote.git
+[submodule "Code_Lab"]
+	path = Code_Lab
+	url = git@github.com:Giridharsalana/Code_Lab.git
