@@ -6,7 +6,7 @@ LABEL maintainer="giridharsalana@gmail.com"
 RUN sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get install --quiet --yes fish
     
 # Flutter Setup
-RUN sudo apt update && sudo apt install -y curl git unzip xz-utils zip libglu1-mesa openjdk-11-jdk wget
+RUN sudo apt update && sudo apt install -y curl git unzip xz-utils zip libglu1-mesa wget
 
 # Gui Setup
 RUN sudo apt-get update && \
@@ -26,6 +26,9 @@ RUN cd Android/sdk/tools/bin && yes | ./sdkmanager --licenses
 RUN cd Android/sdk/tools/bin && ./sdkmanager "build-tools;29.0.2" "patcher;v4" "platform-tools" "platforms;android-29" "sources;android-29"
 RUN cd Android/sdk/tools/bin && ./sdkmanager --install "cmdline-tools;latest"
 ENV PATH "$PATH:/home/gitpod/Android/sdk/platform-tools"
+
+# Java 11 Install 
+RUN sudo apt install -y openjdk-11-jdk
 
 # Download Flutter SDK
 RUN git clone https://github.com/flutter/flutter.git
