@@ -8,11 +8,6 @@ RUN sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get install --
 # Flutter Setup
 RUN sudo apt update && sudo apt install -y curl git unzip xz-utils zip libglu1-mesa wget openjdk-8-jdk
 
-# Gui Setup
-RUN sudo apt-get update && \
-    sudo apt-get install -y libgtk-3-dev && \
-    sudo rm -rf /var/lib/apt/lists/*
-
 # Prepare Android directories and system variables
 RUN mkdir -p Android/sdk
 ENV ANDROID_SDK_ROOT /home/gitpod/Android/sdk
